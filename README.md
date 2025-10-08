@@ -18,6 +18,8 @@ And for running it as a standalone executable, in Linux/macOS run the `/app/targ
 The `-J--add-opens=java.base/java.net=ALL-UNNAMED` is needed to run the application without facing any issues regarding the access to `java.net` package.
 If you later see other inaccessible packages, you can add them to the command similar to the one above.
 
+The user/password for the application is `admin/admin`.
+
 During the execution of `mvn install`, the `nbm:standalone-zip` is executed automatically, that creates the minimal standalone executable under the `app/target` directory, named as `app-x.x-SNAPSHOT.zip`.
 If you want to just do the packaging separately, execute the following command:
 ```shell
